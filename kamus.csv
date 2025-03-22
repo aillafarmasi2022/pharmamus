@@ -1,6 +1,21 @@
-Istilah,Terjemahan
-Antiseptik,Zat yang digunakan untuk menghambat pertumbuhan mikroorganisme
-Bioavailabilitas,Persentase obat yang masuk ke sirkulasi sistemik
-Emulsi,Sistem dispersi dua fase cair yang tidak saling bercampur
-Eksipien,Bahan tambahan dalam formulasi obat
-Farmakokinetika,Studi tentang perjalanan obat dalam tubuh
+"import pandas as pd"
+""
+"# Data istilah farmasi"
+"data = {"
+"""Istilah"": [""Antiseptik"", ""Bioavailabilitas"", ""Emulsi"", ""Eksipien"", ""Farmakokinetika""],"
+"""Terjemahan"": ["
+"""Zat yang digunakan untuk menghambat pertumbuhan mikroorganisme"","
+"""Persentase obat yang masuk ke sirkulasi sistemik"","
+"""Sistem dispersi dua fase cair yang tidak saling bercampur"","
+"""Bahan tambahan dalam formulasi obat"","
+"""Studi tentang perjalanan obat dalam tubuh"""
+"]"
+"}"
+""
+"# Membuat DataFrame"
+"df = pd.DataFrame(data)"
+""
+"# Menyimpan ke file CSV"
+"df.to_csv(""data/kamus.csv"", index=False)"
+""
+"print(""File kamus.csv berhasil dibuat!"")"
